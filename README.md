@@ -82,5 +82,3 @@ Controller nhận yêu cầu và chọn mã HTTP. Service chuyển entity thành
 - Build trên .NET SDK 10.0.402 với 0 lỗi và 0 cảnh báo. Áp dụng `InitialCreate` trên PostgreSQL 16.13. Chạy lại migration giữ nguyên bốn bảng nghiệp vụ, hai khóa ngoại và số dòng mẫu theo thứ tự Customer, Contract, PriceList, PriceItem là `2, 1, 1, 2`.
 - Gọi hai endpoint trong Swagger và đối chiếu phản hồi `200` với kết quả SQL. ID hợp đồng không tồn tại trả `404` với `ProblemDetails`.
 - Chạy lại từ bản sao mã nguồn sạch và database mới trên cùng máy. Sau khi đổi tên khách hàng trực tiếp trong database kiểm thử thứ hai, lời gọi GET kế tiếp trả về tên mới.
-
-Xem [dàn ý quay demo](docs/demo-tuan-05.md) để chuẩn bị video và bài nộp.
